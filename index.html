@@ -4,14 +4,39 @@
     <meta charset="utf-8">
     <title> Meme Rating Site</title>
     <link rel="stylesheet" href="myStyle.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
-    <!-- <script>
-      function () {
-      }
-
-    </script> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">>
+    <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
   <body >
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'London')">Meme Dictionary</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">About Your Meme Queen</button>
+    </div>
+
+    <div id="Meme Dictionary" class="tabcontent">
+      <h3>Meme Dicitonary</h3>
+    </div>
+
+    <div id="About Your Meme Queen" class="tabcontent">
+      <h3>About Your Meme Queen</h3>
+    </div>
     <header>
       <h2>Welcome to</h2>
       <h1 style="font-size:50px;">The Meme Dictionary</h1>
@@ -20,8 +45,10 @@
       Where only the worthiest memes will come out victorious.
     </div>
     <img src="spongememe.png" >
-    <img src="">
+    <img src="pepememe.jpg">
     <img src="" >
+<div></div>
+
 
   </body>
 </html>
